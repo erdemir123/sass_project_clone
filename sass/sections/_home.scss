@@ -1,0 +1,71 @@
+.home{
+    min-height: 80vh;
+    @include flex(center, center);
+    flex-wrap:wrap;
+    gap: 2rem;
+    background: $pink;
+    .image{
+        flex: 1 1 42rem;
+        img{
+            width: 100%;
+            animation: floating 6s linear infinite;
+        }
+    }
+    .content{
+        flex: 1 1 42rem;
+        p{
+            font-size: 2rem;
+            padding: 1rem 0;
+            line-height: 1.5;
+        }
+        h3{
+            font-size: 6rem;
+            font-weight: bolder;
+        }
+        .line-down{
+            position: relative;
+            z-index: 0;
+            &::before{
+                content: "";
+                position: absolute;
+                bottom: .5rem;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 90%;
+                background-color: $yellow;
+                z-index: -1;
+                clip-path : polygon( 0 80%,100% 75%,100% 100%,0% 100%) ;
+                @include lg{
+                    font-size: 5rem;
+                }
+
+                
+
+            }
+        }
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+@keyframes floating {
+
+    0%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(-4rem);
+    }
+    100%{
+        transform: translateY(0rem);
+    }
+    
+}

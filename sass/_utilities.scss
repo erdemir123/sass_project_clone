@@ -1,0 +1,88 @@
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    color: #ffff;
+    background: $black;
+    border: $border;
+    transition: .6s;
+    cursor: pointer;
+    font-weight: bolder ;
+    border-radius: .5rem;
+    &:hover{
+        background: none;
+        color: $black;
+    }
+}
+section{
+    padding: 5rem 9%;
+    @include lg{
+        padding:3rem 2rem;
+    }
+}
+.card-container{
+    @include flex(center,center,row);
+    flex-wrap:wrap;
+}
+.card-item{
+    text-align: center;
+    margin: 2rem;
+    padding: 2rem;
+    min-width: 200px;
+    width: 330px;
+    background-color: $white;
+    img{
+        width: 60px;
+        height: 60px;
+        margin-bottom: 1rem;
+     }
+    h3{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    p{
+        font-size:2rem
+    }
+}
+.heading{
+    margin:2rem 5rem;
+    text-align: center;
+    span{
+        font-size: 3rem;
+    }
+    h1{
+        font-size: 4rem;
+    }
+}
+.box{
+    @include flex( center, center, row);
+    margin-bottom: 8rem;
+    @include md{
+        flex-direction: column;
+    }
+    .image{
+        width:40%;
+        @include md{
+            width: 100%;
+        }
+    }
+    .content{
+        width: 50%;
+        margin-bottom: 2rem;
+        @include md{
+            width: 100%;
+        }
+        h3{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 2rem;
+            line-height: 2;
+        }
+    }
+}
+    
+
+    
+

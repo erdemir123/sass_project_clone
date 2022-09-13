@@ -1,0 +1,38 @@
+.features{
+    padding:0;
+    margin-bottom: 5rem;
+    .steps{
+        padding: 5rem 0;
+        background-color:#cae8e3;
+        @include flex(center, center, column);
+        h2{
+            font-size: 3rem;
+        }
+        h1{
+            font-size: 4rem;
+        }
+        .card-container{
+            .card-item{
+                background-color: #cae8e3;
+                img{
+                    width: 300px !important;
+                    height: 200px !important;
+                }
+            }
+            
+        }
+    }
+    .box-container{
+        margin: 8rem;
+        .box:nth-child(2){
+                .image{
+                    order:2;
+                }
+        }
+        .box:nth-child(4){
+                .image{
+                    order:2;
+                }
+        }
+    }
+}

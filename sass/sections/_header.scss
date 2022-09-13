@@ -1,0 +1,54 @@
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  @include flex(space-around, center, row);
+  background-color: $white;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 2rem 9%;
+  z-index: 12;
+  .logo{
+    font-size: 3rem;
+    color: $black;
+  }
+  .navbar{
+    display: block;
+    background-color: $white;
+    color: $black;
+    &.active{
+      width: 100%;
+      position: absolute;
+      display: block;
+      top: 8.2rem;
+      left: 0;
+      text-align: center;
+      
+    }
+    @include lg{
+      display: none;
+    }
+    a{
+      font-size: 2rem;
+      padding: 0 1rem;
+      color: $black;
+      
+      &.active{
+        display: block;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .btn{
+    display: block;
+    @include lg{
+      display: none;
+    }
+  }
+  #menu-btn{
+    display:none;
+    font-size: 3rem;
+    @include lg{
+      display: block;
+    }
+  }
+}

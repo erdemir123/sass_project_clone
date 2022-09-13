@@ -1,0 +1,54 @@
+.footer{
+    @include flex(center, center, column);
+    .started{
+        h1{
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        p{
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .input{
+            position: relative;
+            text-align: center;
+            .big{
+                width: 80%;
+                height: 6rem;
+                text-indent: 2rem;
+                border-radius: 1rem;
+        }
+            .btn{
+                position: absolute;
+                right: 10rem;
+                bottom:.5rem;
+                @include md{
+                    right: 7rem;
+                }
+                
+            }
+            
+            
+        }
+        .sing{
+            text-align: center;
+            font-size: 2rem;
+            margin: 2rem 0;
+        }
+    }
+    .links{
+        margin: 2rem 0;
+        // border: 1px solid red;
+        width: 100%;
+        .contact{
+            @include flex(space-around, center, row);
+            width: 100%;
+            // border: 1px solid red;
+            i{
+                font-size: 3rem;
+            }
+        }
+    }
+}

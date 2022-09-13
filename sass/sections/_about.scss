@@ -1,0 +1,30 @@
+.about{
+    @include flex(center, center,row);
+    margin-top: 5rem;
+    margin: 0 8rem;
+    @include md{
+        flex-direction: column;
+    }
+    img{
+        width: 60%;
+        padding: 4rem;
+        min-width: 450px;
+    }
+    .about-content{
+        width: 40%;
+        min-width: 300px;
+        @include flex(center, flex-start ,column);
+        @include md{
+            width: 100%;
+            @include flex(center, center,column);
+        }
+        h2{
+            font-size: 4.5rem;
+        }
+        p{
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+    
+}

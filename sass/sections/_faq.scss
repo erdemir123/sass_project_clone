@@ -1,0 +1,42 @@
+.faq-container{
+    background-color: #cae8e3;
+    width: 150%;
+    margin: 0;
+    .question-container{
+        @include flex(center,center, column);
+        .question{
+            width:60%;
+            background: $white;
+            margin-bottom: 2rem;
+            height: 6rem;
+            overflow-y:hidden;
+            border-radius: 4px;
+            transition: .8s;
+            &.active{
+                height: 20rem;
+            }
+            .user-question{
+                @include flex(space-between,center,row);
+                padding: 0 3rem;
+                font-size: 2rem;
+                font-weight: bolder;
+                margin: 2rem 0;
+                .fa-chevron-up{
+                    transition: .8s;
+                    &.active{
+                        transform: rotate(-180deg);
+                    }
+                }
+            }
+            .answer{
+                text-align: start;
+                font-size: 2rem;
+                margin-top: 3rem;
+                padding: 0 3rem;
+                line-height: 1.5;
+                font-weight: bolder;
+                color: #555555;
+            }
+        }
+    }
+}

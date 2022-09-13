@@ -1,0 +1,14 @@
+.services{
+    @include flex(center, center, column);
+    background-color: $pink;
+    padding-bottom:8rem;
+    span{
+        font-size: 4rem;
+    }
+    h1{
+        font-size: 5rem;
+    }
+    
+}
+
+

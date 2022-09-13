@@ -1,0 +1,37 @@
+.reviews{
+    @include flex(center, center,column);
+    background-color: $pink;
+    padding-bottom: 2rem;
+    .person-container{
+        @include flex(center, center,row);
+        height: 298px;
+        flex-wrap: wrap;
+        overflow: hidden;
+        width:50%;
+        text-align: center;
+        .person{
+            display: none;
+            &.active{
+                display: block;
+            }
+            img{
+                width: 100px;
+                border-radius: 50%;
+                margin:2rem;
+            }
+            p{
+                font-size: 2rem;
+                line-height: 2;
+                
+            }
+        }
+    }
+    .btns{
+        font-size: 4rem;
+        margin-top: 3rem;
+        font-weight: bolder;
+        display: flex;
+        gap: 4rem;
+        margin-bottom: 4rem;
+    }
+}
